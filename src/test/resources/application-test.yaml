@@ -1,0 +1,5 @@
+clientA:
+  baseUrl: http://localhost:${wiremock.server.port}
+clientB:
+  baseUrl: http://localhost:${wiremock.server.port}
+

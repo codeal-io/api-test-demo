@@ -1,0 +1,5 @@
+clientA:
+  baseUrl: https://service-a
+clientB:
+  baseUrl: https://service-a
+

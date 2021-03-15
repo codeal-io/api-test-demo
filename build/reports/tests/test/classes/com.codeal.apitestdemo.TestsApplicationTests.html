@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TestsApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TestsApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.codeal.apitestdemo.html">com.codeal.apitestdemo</a> &gt; TestsApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.860s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">POST saveData should return 200 if client A and client B return 200()</td>
+<td class="success">0.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST saveData should return 500 if client A return 500()</td>
+<td class="success">2.732s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">POST saveData should return 500 if client B return 500()</td>
+<td class="success">0.055s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>23:13:10.918 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:13:10.929 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:13:10.958 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.codeal.apitestdemo.TestsApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:13:10.970 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codeal.apitestdemo.TestsApplicationTests], using SpringBootContextLoader
+23:13:10.973 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTests-context.xml] does not exist
+23:13:10.974 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTestsContext.groovy] does not exist
+23:13:10.974 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.codeal.apitestdemo.TestsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:13:10.975 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.codeal.apitestdemo.TestsApplicationTests]: TestsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:13:11.075 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/carlos.mayer/Private/Codeal/api-test-demo/build/classes/kotlin/main/com/codeal/apitestdemo/TestsApplication.class]
+23:13:11.076 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.codeal.apitestdemo.TestsApplication for test class com.codeal.apitestdemo.TestsApplicationTests
+23:13:11.155 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.codeal.apitestdemo.TestsApplicationTests]: using defaults.
+23:13:11.155 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:13:11.168 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+23:13:11.168 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:13:11.168 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9936a84, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddc17fc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@79d798b6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fccc721, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1d995b16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3057ccae, org.springframework.test.context.event.EventPublishingTestExecutionListener@7500e03a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c1cc474, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b8a6d0a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45b6fa69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3745d3d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4d808e2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@55fa48aa, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@27ed95ce, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@3e2f319d]
+23:13:11.174 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6f793da1 testClass = TestsApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a5a4de1 testClass = TestsApplicationTests, locations = '{}', classes = '{class com.codeal.apitestdemo.TestsApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@22e7d8c8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9fdfac6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@462405bb, [ImportsContextCustomizer@7fb16c3 key = [org.springframework.cloud.contract.wiremock.WireMockConfiguration, org.springframework.cloud.contract.wiremock.WireMockRestTemplateConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30ffb677, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@17bb1d83, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@195349d3, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@58d54f6a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+23:13:11.201 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test]
+23:13:11.204 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-03-15 23:13:11.605  INFO 22746 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Starting TestsApplicationTests using Java 1.8.0_271 on C02Z86QLLVDL with PID 22746 (started by carlos.mayer in /Users/carlos.mayer/Private/Codeal/api-test-demo)
+2021-03-15 23:13:11.606  INFO 22746 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : The following profiles are active: test
+2021-03-15 23:13:12.582  INFO 22746 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=797e326a-dab8-3ae1-85e8-37f4151bc202
+2021-03-15 23:13:12.890  INFO 22746 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-03-15 23:13:12.899  INFO 22746 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-15 23:13:12.900  INFO 22746 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-15 23:13:13.019  INFO 22746 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-15 23:13:13.019  INFO 22746 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1137 ms
+2021-03-15 23:13:13.808  INFO 22746 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @3560ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
+2021-03-15 23:13:14.173  INFO 22746 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
+2021-03-15 23:13:14.192  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,AVAILABLE}
+2021-03-15 23:13:14.194  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,AVAILABLE}
+2021-03-15 23:13:14.201  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:10693}
+2021-03-15 23:13:14.204  INFO 22746 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@56b430d(wiremock,h=[],w=[]) for Server@1733a03e[provider=Conscrypt,keyStore=null,trustStore=null]
+2021-03-15 23:13:14.205  INFO 22746 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+2021-03-15 23:13:14.225  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14865}
+2021-03-15 23:13:14.225  INFO 22746 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @3979ms
+2021-03-15 23:13:14.698  INFO 22746 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-15 23:13:15.319  INFO 22746 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56959 (http) with context path ''
+2021-03-15 23:13:15.333  INFO 22746 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Started TestsApplicationTests in 4.127 seconds (JVM running for 5.087)
+2021-03-15 23:13:17.229  INFO 22746 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 23:13:17.230  INFO 22746 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-15 23:13:17.231  INFO 22746 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-03-15 23:13:17.368  INFO 22746 --- [qtp450632829-47] w.o.e.j.s.handler.ContextHandler.ROOT    : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2021-03-15 23:13:17.835  INFO 22746 --- [qtp450632829-47] WireMock                                 : Request received:
+127.0.0.1 - POST /saveDataA
+
+Accept: [application/json]
+User-Agent: [Java/1.8.0_271]
+Connection: [keep-alive]
+Host: [localhost:10693]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 500,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 500
+Content-Type: [application/json]
+Matched-Stub-Id: [34f8c1ba-e21a-4670-ab8f-d3e985b476a3]
+
+
+2021-03-15 23:13:17.874 ERROR 22746 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:10693/saveDataA] [ClientA#saveData()]: []] with root cause
+
+feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:10693/saveDataA] [ClientA#saveData()]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:231) ~[feign-core-10.10.1.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:180) ~[feign-core-10.10.1.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.10.1.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-10.10.1.jar:na]
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-10.10.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-10.10.1.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar:na]
+	at com.sun.proxy.$Proxy85.saveData(Unknown Source) ~[na:na]
+	at com.codeal.apitestdemo.DemoController.saveData(DemoController.kt:22) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2021-03-15 23:13:18.120  INFO 22746 --- [qtp450632829-22] WireMock                                 : Request received:
+127.0.0.1 - POST /saveDataA
+
+Accept: [application/json]
+User-Agent: [Java/1.8.0_271]
+Connection: [keep-alive]
+Host: [localhost:10693]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [258f754c-8c0c-4f3e-a820-99c3ea14872e]
+
+
+2021-03-15 23:13:18.129  INFO 22746 --- [qtp450632829-45] WireMock                                 : Request received:
+127.0.0.1 - POST /saveDataB
+
+Accept: [application/json]
+User-Agent: [Java/1.8.0_271]
+Connection: [keep-alive]
+Host: [localhost:10693]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 500,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 500
+Content-Type: [application/json]
+Matched-Stub-Id: [1410e4be-fa5e-4241-ba3f-60b93a83594c]
+
+
+2021-03-15 23:13:18.132 ERROR 22746 --- [o-auto-1-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:10693/saveDataB] [ClientB#saveData()]: []] with root cause
+
+feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:10693/saveDataB] [ClientB#saveData()]: []
+	at feign.FeignException.serverErrorStatus(FeignException.java:231) ~[feign-core-10.10.1.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:180) ~[feign-core-10.10.1.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.10.1.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-10.10.1.jar:na]
+	at feign.AsyncResponseHandler.handleResponse(AsyncResponseHandler.java:96) ~[feign-core-10.10.1.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:138) ~[feign-core-10.10.1.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar:na]
+	at com.sun.proxy.$Proxy87.saveData(Unknown Source) ~[na:na]
+	at com.codeal.apitestdemo.DemoController.saveData(DemoController.kt:23) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_271]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+
+2021-03-15 23:13:18.169  INFO 22746 --- [qtp450632829-47] WireMock                                 : Request received:
+127.0.0.1 - POST /saveDataA
+
+Accept: [application/json]
+User-Agent: [Java/1.8.0_271]
+Connection: [keep-alive]
+Host: [localhost:10693]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [ee609c6a-c924-4aab-93a9-167aa57f9bcb]
+
+
+2021-03-15 23:13:18.172  INFO 22746 --- [qtp450632829-22] WireMock                                 : Request received:
+127.0.0.1 - POST /saveDataB
+
+Accept: [application/json]
+User-Agent: [Java/1.8.0_271]
+Connection: [keep-alive]
+Host: [localhost:10693]
+
+
+
+Matched response definition:
+{
+  &quot;status&quot; : 200,
+  &quot;headers&quot; : {
+    &quot;Content-Type&quot; : &quot;application/json&quot;
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [00c8c8d7-14a1-4460-a47a-78fa0becae0b]
+
+
+2021-03-15 23:13:18.230  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:10693}
+2021-03-15 23:13:18.230  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14865}
+2021-03-15 23:13:18.233  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,UNAVAILABLE}
+2021-03-15 23:13:18.233  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,UNAVAILABLE}
+2021-03-15 23:13:18.234  INFO 22746 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
+2021-03-15 23:13:18.236  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,AVAILABLE}
+2021-03-15 23:13:18.236  INFO 22746 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,AVAILABLE}
+2021-03-15 23:13:18.237  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:10693}
+2021-03-15 23:13:18.238  INFO 22746 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@400ecd52(wiremock,h=[],w=[]) for Server@1733a03e[provider=Conscrypt,keyStore=null,trustStore=null]
+2021-03-15 23:13:18.238  INFO 22746 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+2021-03-15 23:13:18.243  INFO 22746 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14865}
+2021-03-15 23:13:18.243  INFO 22746 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @7996ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at Mar 15, 2021 11:13:18 PM</p>
+</div>
+</div>
+</body>
+</html>
