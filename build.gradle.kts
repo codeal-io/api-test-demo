@@ -20,11 +20,7 @@ extra["springCloudVersion"] = "2020.0.1"
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("io.rest-assured:rest-assured:3.3.0")
+	testImplementation("io.rest-assured:rest-assured")
 	testImplementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner")
 }
 

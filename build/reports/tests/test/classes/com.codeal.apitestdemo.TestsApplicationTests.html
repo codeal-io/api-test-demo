@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.616s</div>
+<div class="counter">1.533s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">POST saveData should return 200 if client A and client B return 200()</td>
-<td class="success">0.047s</td>
+<td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">POST saveData should return 500 if client A return 500()</td>
-<td class="success">1.528s</td>
+<td class="success">1.476s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">POST saveData should return 500 if client B return 500()</td>
-<td class="success">0.041s</td>
+<td class="success">0.035s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,24 +97,24 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:23:47.208 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-23:23:47.220 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-23:23:47.248 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.codeal.apitestdemo.TestsApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-23:23:47.258 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codeal.apitestdemo.TestsApplicationTests], using SpringBootContextLoader
-23:23:47.261 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTests-context.xml] does not exist
-23:23:47.262 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTestsContext.groovy] does not exist
-23:23:47.262 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.codeal.apitestdemo.TestsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:23:47.263 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.codeal.apitestdemo.TestsApplicationTests]: TestsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:23:47.367 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/carlos.mayer/Private/Codeal/api-test-demo/build/classes/kotlin/main/com/codeal/apitestdemo/TestsApplication.class]
-23:23:47.368 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.codeal.apitestdemo.TestsApplication for test class com.codeal.apitestdemo.TestsApplicationTests
-23:23:47.451 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.codeal.apitestdemo.TestsApplicationTests]: using defaults.
-23:23:47.451 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-23:23:47.464 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-23:23:47.465 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-23:23:47.465 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9936a84, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ddc17fc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@79d798b6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@fccc721, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1d995b16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3057ccae, org.springframework.test.context.event.EventPublishingTestExecutionListener@7500e03a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c1cc474, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b8a6d0a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45b6fa69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3745d3d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4d808e2d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@55fa48aa, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@27ed95ce, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@3e2f319d]
-23:23:47.469 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6f793da1 testClass = TestsApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a5a4de1 testClass = TestsApplicationTests, locations = '{}', classes = '{class com.codeal.apitestdemo.TestsApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@22e7d8c8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9fdfac6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@462405bb, [ImportsContextCustomizer@7fb16c3 key = [org.springframework.cloud.contract.wiremock.WireMockConfiguration, org.springframework.cloud.contract.wiremock.WireMockRestTemplateConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30ffb677, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@17bb1d83, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@195349d3, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@58d54f6a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-23:23:47.509 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test]
-23:23:47.513 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>23:31:52.354 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:31:52.363 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:31:52.390 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.codeal.apitestdemo.TestsApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:31:52.400 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codeal.apitestdemo.TestsApplicationTests], using SpringBootContextLoader
+23:31:52.404 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTests-context.xml] does not exist
+23:31:52.404 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.codeal.apitestdemo.TestsApplicationTests]: class path resource [com/codeal/apitestdemo/TestsApplicationTestsContext.groovy] does not exist
+23:31:52.404 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.codeal.apitestdemo.TestsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:31:52.405 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.codeal.apitestdemo.TestsApplicationTests]: TestsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:31:52.501 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/carlos.mayer/Private/Codeal/api-test-demo/build/classes/kotlin/main/com/codeal/apitestdemo/TestsApplication.class]
+23:31:52.502 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.codeal.apitestdemo.TestsApplication for test class com.codeal.apitestdemo.TestsApplicationTests
+23:31:52.577 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.codeal.apitestdemo.TestsApplicationTests]: using defaults.
+23:31:52.577 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:31:52.587 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+23:31:52.588 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:31:52.588 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5375cd82, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e6f4a84, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@74a03630, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f528197, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72364422, org.springframework.test.context.support.DirtiesContextTestExecutionListener@66991b8a, org.springframework.test.context.event.EventPublishingTestExecutionListener@137da0df, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8b8c51e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@486f977f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@660490b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1881bff4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@565f09cf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@62bfa814, org.springframework.cloud.contract.stubrunner.provider.wiremock.StubRunnerWireMockTestExecutionListener@207c3df8, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@3597481c]
+23:31:52.591 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@737d5d4b testClass = TestsApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@606713cc testClass = TestsApplicationTests, locations = '{}', classes = '{class com.codeal.apitestdemo.TestsApplication}', contextInitializerClasses = '[]', activeProfiles = '{test}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@794a0aa0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@9fdfac6d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@ad6c581, [ImportsContextCustomizer@30a4f71 key = [org.springframework.cloud.contract.wiremock.WireMockConfiguration, org.springframework.cloud.contract.wiremock.WireMockRestTemplateConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2f28fbcf, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a6663a8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3faa6f79, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@52759c53], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+23:31:52.617 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test]
+23:31:52.620 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -124,37 +124,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.3)
 
-2021-03-15 23:23:47.973  INFO 23400 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Starting TestsApplicationTests using Java 1.8.0_271 on C02Z86QLLVDL with PID 23400 (started by carlos.mayer in /Users/carlos.mayer/Private/Codeal/api-test-demo)
-2021-03-15 23:23:47.974  INFO 23400 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : The following profiles are active: test
-2021-03-15 23:23:48.864  INFO 23400 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e95eea0e-13fc-38e2-8200-52706a0810ec
-2021-03-15 23:23:49.176  INFO 23400 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2021-03-15 23:23:49.186  INFO 23400 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-15 23:23:49.187  INFO 23400 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-15 23:23:49.294  INFO 23400 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-15 23:23:49.294  INFO 23400 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
-2021-03-15 23:23:50.041  INFO 23400 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @3555ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
-2021-03-15 23:23:50.384  INFO 23400 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
-2021-03-15 23:23:50.396  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,AVAILABLE}
-2021-03-15 23:23:50.397  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,AVAILABLE}
-2021-03-15 23:23:50.404  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:12366}
-2021-03-15 23:23:50.406  INFO 23400 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@56b430d(wiremock,h=[],w=[]) for Server@1733a03e[provider=Conscrypt,keyStore=null,trustStore=null]
-2021-03-15 23:23:50.408  INFO 23400 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
-2021-03-15 23:23:50.427  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14360}
-2021-03-15 23:23:50.427  INFO 23400 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @3943ms
-2021-03-15 23:23:50.761  INFO 23400 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-15 23:23:51.205  INFO 23400 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57112 (http) with context path ''
-2021-03-15 23:23:51.216  INFO 23400 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Started TestsApplicationTests in 3.702 seconds (JVM running for 4.732)
-2021-03-15 23:23:52.317  INFO 23400 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-15 23:23:52.317  INFO 23400 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-15 23:23:52.318  INFO 23400 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-03-15 23:23:52.406  INFO 23400 --- [qtp450632829-47] w.o.e.j.s.handler.ContextHandler.ROOT    : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
-2021-03-15 23:23:52.613  INFO 23400 --- [qtp450632829-47] WireMock                                 : Request received:
+2021-03-15 23:31:53.013  INFO 24076 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Starting TestsApplicationTests using Java 1.8.0_271 on C02Z86QLLVDL with PID 24076 (started by carlos.mayer in /Users/carlos.mayer/Private/Codeal/api-test-demo)
+2021-03-15 23:31:53.014  INFO 24076 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : The following profiles are active: test
+2021-03-15 23:31:53.139  WARN 24076 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add &quot;com.fasterxml.jackson.module:jackson-module-kotlin&quot; to the classpath
+2021-03-15 23:31:53.731  INFO 24076 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=888c716d-ec6c-37c3-a561-78ed44508299
+2021-03-15 23:31:54.108  INFO 24076 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-03-15 23:31:54.117  INFO 24076 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-15 23:31:54.118  INFO 24076 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-15 23:31:54.206  INFO 24076 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-15 23:31:54.206  INFO 24076 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 991 ms
+2021-03-15 23:31:54.884  INFO 24076 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @3244ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
+2021-03-15 23:31:55.121  INFO 24076 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
+2021-03-15 23:31:55.132  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3ff77c1c{/__admin,null,AVAILABLE}
+2021-03-15 23:31:55.134  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@c5db625{/,null,AVAILABLE}
+2021-03-15 23:31:55.142  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@27902f28{HTTP/1.1, (http/1.1)}{0.0.0.0:11479}
+2021-03-15 23:31:55.145  INFO 24076 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@7701eb3f(wiremock,h=[],w=[]) for Server@33832d83[provider=Conscrypt,keyStore=null,trustStore=null]
+2021-03-15 23:31:55.147  INFO 24076 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+2021-03-15 23:31:55.167  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@1f2a4dd9{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14977}
+2021-03-15 23:31:55.167  INFO 24076 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @3528ms
+2021-03-15 23:31:55.471  INFO 24076 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-15 23:31:55.893  INFO 24076 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57410 (http) with context path ''
+2021-03-15 23:31:55.904  INFO 24076 --- [    Test worker] c.c.apitestdemo.TestsApplicationTests    : Started TestsApplicationTests in 3.282 seconds (JVM running for 4.265)
+2021-03-15 23:31:56.938  INFO 24076 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 23:31:56.938  INFO 24076 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-15 23:31:56.939  INFO 24076 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-03-15 23:31:57.022  INFO 24076 --- [  qtp7648840-47] w.o.e.j.s.handler.ContextHandler.ROOT    : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2021-03-15 23:31:57.227  INFO 24076 --- [  qtp7648840-47] WireMock                                 : Request received:
 127.0.0.1 - POST /saveDataA
 
-Accept: [application/json]
+Accept: [*/*]
 User-Agent: [Java/1.8.0_271]
 Connection: [keep-alive]
-Host: [localhost:12366]
+Host: [localhost:11479]
 
 
 
@@ -169,12 +170,12 @@ Matched response definition:
 Response:
 HTTP/1.1 500
 Content-Type: [application/json]
-Matched-Stub-Id: [960835d6-5627-4942-9330-71defab2e09d]
+Matched-Stub-Id: [665957b1-d2fc-4085-b22b-697901eb0603]
 
 
-2021-03-15 23:23:52.635 ERROR 23400 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:12366/saveDataA] [ClientA#saveData()]: []] with root cause
+2021-03-15 23:31:57.249 ERROR 24076 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:11479/saveDataA] [ClientA#saveData()]: []] with root cause
 
-feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:12366/saveDataA] [ClientA#saveData()]: []
+feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:11479/saveDataA] [ClientA#saveData()]: []
 	at feign.FeignException.serverErrorStatus(FeignException.java:231) ~[feign-core-10.10.1.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:180) ~[feign-core-10.10.1.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.10.1.jar:na]
@@ -184,7 +185,7 @@ feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [h
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar:na]
 	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar:na]
 	at com.sun.proxy.$Proxy85.saveData(Unknown Source) ~[na:na]
-	at com.codeal.apitestdemo.DemoUserController.saveData(DemoUserController.kt:22) ~[main/:na]
+	at com.codeal.apitestdemo.DemoUserController.saveData(TestsApplication.kt:28) ~[main/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
@@ -236,13 +237,13 @@ feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [h
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
 
-2021-03-15 23:23:52.785  INFO 23400 --- [qtp450632829-22] WireMock                                 : Request received:
+2021-03-15 23:31:57.420  INFO 24076 --- [  qtp7648840-22] WireMock                                 : Request received:
 127.0.0.1 - POST /saveDataA
 
-Accept: [application/json]
+Accept: [*/*]
 User-Agent: [Java/1.8.0_271]
 Connection: [keep-alive]
-Host: [localhost:12366]
+Host: [localhost:11479]
 
 
 
@@ -257,16 +258,16 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [77bc1506-ddb1-4ef6-a365-0c060e48713d]
+Matched-Stub-Id: [fb51d12b-85db-48ae-8eff-de63684cf5c9]
 
 
-2021-03-15 23:23:52.793  INFO 23400 --- [qtp450632829-45] WireMock                                 : Request received:
+2021-03-15 23:31:57.427  INFO 24076 --- [  qtp7648840-45] WireMock                                 : Request received:
 127.0.0.1 - POST /saveDataB
 
-Accept: [application/json]
+Accept: [*/*]
 User-Agent: [Java/1.8.0_271]
 Connection: [keep-alive]
-Host: [localhost:12366]
+Host: [localhost:11479]
 
 
 
@@ -281,12 +282,12 @@ Matched response definition:
 Response:
 HTTP/1.1 500
 Content-Type: [application/json]
-Matched-Stub-Id: [86e9e2f0-bb46-436a-b8fc-2de6e9558c22]
+Matched-Stub-Id: [9254cdbe-3b31-4f90-a28b-2d3fa83af52c]
 
 
-2021-03-15 23:23:52.796 ERROR 23400 --- [o-auto-1-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:12366/saveDataB] [ClientB#saveData()]: []] with root cause
+2021-03-15 23:31:57.429 ERROR 24076 --- [o-auto-1-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:11479/saveDataB] [ClientB#saveData()]: []] with root cause
 
-feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:12366/saveDataB] [ClientB#saveData()]: []
+feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [http://localhost:11479/saveDataB] [ClientB#saveData()]: []
 	at feign.FeignException.serverErrorStatus(FeignException.java:231) ~[feign-core-10.10.1.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:180) ~[feign-core-10.10.1.jar:na]
 	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.10.1.jar:na]
@@ -296,7 +297,7 @@ feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [h
 	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:89) ~[feign-core-10.10.1.jar:na]
 	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.10.1.jar:na]
 	at com.sun.proxy.$Proxy87.saveData(Unknown Source) ~[na:na]
-	at com.codeal.apitestdemo.DemoUserController.saveData(DemoUserController.kt:23) ~[main/:na]
+	at com.codeal.apitestdemo.DemoUserController.saveData(TestsApplication.kt:29) ~[main/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_271]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_271]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_271]
@@ -348,13 +349,13 @@ feign.FeignException$InternalServerError: [500 Server Error] during [POST] to [h
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
 
-2021-03-15 23:23:52.817  INFO 23400 --- [qtp450632829-47] WireMock                                 : Request received:
+2021-03-15 23:31:57.450  INFO 24076 --- [  qtp7648840-47] WireMock                                 : Request received:
 127.0.0.1 - POST /saveDataA
 
-Accept: [application/json]
+Accept: [*/*]
 User-Agent: [Java/1.8.0_271]
 Connection: [keep-alive]
-Host: [localhost:12366]
+Host: [localhost:11479]
 
 
 
@@ -369,16 +370,16 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [25f9814e-dea9-44c1-b65d-7fe4a379e2e4]
+Matched-Stub-Id: [cab65875-555c-4be8-bc5f-40d7e9059dd4]
 
 
-2021-03-15 23:23:52.820  INFO 23400 --- [qtp450632829-22] WireMock                                 : Request received:
+2021-03-15 23:31:57.453  INFO 24076 --- [  qtp7648840-22] WireMock                                 : Request received:
 127.0.0.1 - POST /saveDataB
 
-Accept: [application/json]
+Accept: [*/*]
 User-Agent: [Java/1.8.0_271]
 Connection: [keep-alive]
-Host: [localhost:12366]
+Host: [localhost:11479]
 
 
 
@@ -393,21 +394,21 @@ Matched response definition:
 Response:
 HTTP/1.1 200
 Content-Type: [application/json]
-Matched-Stub-Id: [1e1ccac3-2044-4fe1-b4d0-f867d8934f71]
+Matched-Stub-Id: [073432c0-6a0c-40ca-96cd-9d7f6188d1ff]
 
 
-2021-03-15 23:23:52.859  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:12366}
-2021-03-15 23:23:52.859  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14360}
-2021-03-15 23:23:52.861  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,UNAVAILABLE}
-2021-03-15 23:23:52.861  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,UNAVAILABLE}
-2021-03-15 23:23:52.861  INFO 23400 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
-2021-03-15 23:23:52.863  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@1a508fc5{/__admin,null,AVAILABLE}
-2021-03-15 23:23:52.863  INFO 23400 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@12eb8afd{/,null,AVAILABLE}
-2021-03-15 23:23:52.864  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@eb3c34a{HTTP/1.1, (http/1.1)}{0.0.0.0:12366}
-2021-03-15 23:23:52.865  INFO 23400 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@2a5bd3cf(wiremock,h=[],w=[]) for Server@1733a03e[provider=Conscrypt,keyStore=null,trustStore=null]
-2021-03-15 23:23:52.865  INFO 23400 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
-2021-03-15 23:23:52.868  INFO 23400 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@628e446d{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14360}
-2021-03-15 23:23:52.868  INFO 23400 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @6384ms
+2021-03-15 23:31:57.469  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@27902f28{HTTP/1.1, (http/1.1)}{0.0.0.0:11479}
+2021-03-15 23:31:57.470  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@1f2a4dd9{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14977}
+2021-03-15 23:31:57.472  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@c5db625{/,null,UNAVAILABLE}
+2021-03-15 23:31:57.472  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@3ff77c1c{/__admin,null,UNAVAILABLE}
+2021-03-15 23:31:57.473  INFO 24076 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_271-b09
+2021-03-15 23:31:57.475  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@3ff77c1c{/__admin,null,AVAILABLE}
+2021-03-15 23:31:57.475  INFO 24076 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@c5db625{/,null,AVAILABLE}
+2021-03-15 23:31:57.477  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@27902f28{HTTP/1.1, (http/1.1)}{0.0.0.0:11479}
+2021-03-15 23:31:57.478  INFO 24076 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : x509=X509@acdbec(wiremock,h=[],w=[]) for Server@33832d83[provider=Conscrypt,keyStore=null,trustStore=null]
+2021-03-15 23:31:57.478  INFO 24076 --- [    Test worker] w.o.e.jetty.util.ssl.SslContextFactory   : Unable to get KeyManagerFactory instance for algorithm [SunX509] on provider [Conscrypt], using default
+2021-03-15 23:31:57.481  INFO 24076 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@1f2a4dd9{SSL, (ssl, alpn, h2, http/1.1)}{0.0.0.0:14977}
+2021-03-15 23:31:57.482  INFO 24076 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @5843ms
 </pre>
 </span>
 </div>
@@ -419,7 +420,7 @@ Matched-Stub-Id: [1e1ccac3-2044-4fe1-b4d0-f867d8934f71]
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at Mar 15, 2021 11:23:52 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at Mar 15, 2021 11:31:57 PM</p>
 </div>
 </div>
 </body>
